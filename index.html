@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="fi-FI">
+	<!-- Lichess is open source! See https://lichess.org/source --><head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1,viewport-fit=cover"
+		/>
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="default-src 'self' lichess1.org; connect-src 'self' lichess1.org wss://socket0.lichess.org wss://socket1.lichess.org wss://socket2.lichess.org wss://socket3.lichess.org wss://socket4.lichess.org wss://socket5.lichess.org https://explorer.lichess.ovh https://tablebase.lichess.ovh; style-src 'self' 'unsafe-inline' lichess1.org; frame-src 'self' lichess1.org www.youtube.com player.twitch.tv; worker-src 'self' lichess1.org; img-src data: *; script-src 'nonce-Z2ERcKoaltbsTV0a7JrOVGTK' 'self' lichess1.org; font-src 'self' lichess1.org; base-uri 'none';"
+		/>
+		<meta name="theme-color" content="#2e2a24" />
+		<title>
+			Rapid (12+8) casual Chess • Challenge from Anonymous • lichess.org
+		</title>
+		<link
+			href="https://lichess1.org/assets/_umyOP6/css/site.ltr.dark.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://lichess1.org/assets/_umyOP6/css/challenge.page.ltr.dark.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			id="piece-sprite"
+			href="https://lichess1.org/assets/_umyOP6/piece-css/cburnett.css"
+			rel="stylesheet"
+		/>
+		<meta
+			content="Join the challenge or watch the game here."
+			name="description"
+		/>
+		<link
+			rel="mask-icon"
+			href="https://lichess1.org/assets/_umyOP6/logo/lichess.svg"
+			color="black"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			href="https://lichess1.org/assets/_umyOP6/logo/lichess-favicon-512.png"
+			sizes="512x512"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			href="https://lichess1.org/assets/_umyOP6/logo/lichess-favicon-256.png"
+			sizes="256x256"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			href="https://lichess1.org/assets/_umyOP6/logo/lichess-favicon-192.png"
+			sizes="192x192"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			href="https://lichess1.org/assets/_umyOP6/logo/lichess-favicon-128.png"
+			sizes="128x128"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			href="https://lichess1.org/assets/_umyOP6/logo/lichess-favicon-64.png"
+			sizes="64x64"
+		/>
+		<link
+			id="favicon"
+			rel="icon"
+			type="image/png"
+			href="https://lichess1.org/assets/_umyOP6/logo/lichess-favicon-32.png"
+			sizes="32x32"
+		/>
+		<meta name="google" content="notranslate" />
+		<meta
+			property="og:title"
+			content="Rapid (12+8) casual Chess • Challenge from Anonymous"
+		/>
+		<meta
+			property="og:description"
+			content="Join the challenge or watch the game here."
+		/>
+		<meta property="og:url" content="https://lichess.org/9pL2LPy8" />
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="lichess.org" />
+		<meta name="twitter:card" content="summary" />
+		<meta
+			name="twitter:title"
+			content="Rapid (12+8) casual Chess • Challenge from Anonymous"
+		/>
+		<meta
+			name="twitter:description"
+			content="Join the challenge or watch the game here."
+		/>
+		<link
+			href="/blog.atom"
+			title="Blogi"
+			type="application/atom+xml"
+			rel="alternate"
+		/>
+		<link
+			rel="preload"
+			href="https://lichess1.org/assets/_umyOP6/font/lichess.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin=""
+		/>
+		<link
+			rel="preload"
+			href="https://lichess1.org/assets/_umyOP6/font/noto-sans-v14-latin-regular.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin=""
+		/>
+		<link
+			rel="preload"
+			href="https://lichess1.org/assets/_umyOP6/font/lichess.chess.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin=""
+		/>
+		<link
+			rel="preload"
+			href="https://lichess1.org/assets/_umyOP6/images/board/svg/brown.svg"
+			as="image"
+		/>
+		<link rel="manifest" href="/manifest.json" />
+		<meta name="twitter:site" content="@lichess" />
+		<link rel="jslicense" href="/source" />
+	</head>
+	<body
+		class="dark brown Woodi Basic coords-in vsc-initialized online"
+		data-sound-set="standard"
+		data-socket-domains="socket0.lichess.org,socket1.lichess.org,socket2.lichess.org,socket3.lichess.org,socket4.lichess.org,socket5.lichess.org"
+		data-asset-url="https://lichess1.org"
+		data-asset-version="umyOP6"
+		data-theme="dark"
+		data-board-theme="brown"
+		data-piece-set="cburnett"
+	>
+		<form id="blind-mode" action="/toggle-blind-mode" method="POST">
+			<input type="hidden" name="enable" value="1" /><input
+				type="hidden"
+				name="redirect"
+				value="/9pL2LPy8"
+			/><button type="submit">Accessibility: Enable blind mode</button>
+		</form>
+		<header id="top">
+			<div class="site-title-nav">
+				<input
+					type="checkbox"
+					id="tn-tg"
+					class="topnav-toggle fullscreen-toggle"
+					autocomplete="off"
+					aria-label="Navigation"
+				/>
+				<label for="tn-tg" class="fullscreen-mask"></label>
+				<label for="tn-tg" class="hbg"
+					><span class="hbg__in"></span
+				></label>
+				<h1 class="site-title">
+					<a href="/fi">lichess<span>.org</span></a>
+				</h1>
+				<nav id="topnav" class="hover">
+					<section>
+						<a href="/"
+							><span class="play">Pelaa</span
+							><span class="home">lichess.org</span></a
+						>
+						<div role="group">
+							<a href="/fi?any#hook">Luo uusi peli</a
+							><a href="/fi/tournament">Areenaturnaukset</a
+							><a href="/fi/swiss">Sveitsiläiset turnaukset</a
+							><a href="/fi/simul">Simultaanit</a>
+						</div>
+					</section>
+					<section>
+						<a href="/fi/training">Tehtävät</a>
+						<div role="group">
+							<a href="/fi/training">Tehtävät</a
+							><a href="/training/dashboard/30"
+								>Tehtävien hallinta</a
+							><a href="/fi/streak">Puzzle Streak</a
+							><a href="/fi/storm">Puzzle Storm</a
+							><a href="/fi/racer">Puzzle Racer</a>
+						</div>
+					</section>
+					<section>
+						<a href="/practice">Opi</a>
+						<div role="group">
+							<a href="/fi/learn">Shakin perusteet</a
+							><a href="/practice">Harjoittele</a
+							><a href="/fi/training/coordinate">Koordinaatit</a
+							><a href="/fi/study">Tutki</a
+							><a href="/fi/coach">Valmentajat</a>
+						</div>
+					</section>
+					<section>
+						<a href="/fi/tv">Katso</a>
+						<div role="group">
+							<a href="/fi/tv">Lichess TV</a
+							><a href="/games">Meneillään olevat pelit</a
+							><a href="/streamer">Striimaajat</a
+							><a href="/broadcast">Lähetykset</a
+							><a href="/video">Videokirjasto</a>
+						</div>
+					</section>
+					<section>
+						<a href="/player">Yhteisö</a>
+						<div role="group">
+							<a href="/player">Pelaajat</a
+							><a href="/team">Joukkueet</a
+							><a href="/forum">Foorumi</a
+							><a href="/fi/blog/community">Blogi</a>
+						</div>
+					</section>
+					<section>
+						<a href="/analysis">Työkalut</a>
+						<div role="group">
+							<a href="/analysis">Analyysilauta</a
+							><a href="/analysis#explorer">Avaustietokanta</a
+							><a href="/editor">Lautaeditori</a
+							><a href="/paste">Tuo peli</a
+							><a href="/games/search">Tarkennettu haku</a>
+						</div>
+					</section>
+				</nav>
+			</div>
+			<div class="site-buttons">
+				<div id="clinput">
+					<a class="link"><span data-icon=""></span></a
+					><input
+						spellcheck="false"
+						autocomplete="false"
+						aria-label="Etsi"
+						placeholder="Etsi"
+					/>
+				</div>
+				<div class="dasher">
+					<a class="toggle link anon"
+						><span title="Asetukset" data-icon=""></span
+					></a>
+					<div id="dasher_app" class="dropdown"></div>
+				</div>
+				<a
+					href="/fi/login?referrer=/9pL2LPy8"
+					class="signin button button-empty"
+					>Kirjaudu sisään</a
+				>
+			</div>
+		</header>
+		<div id="main-wrap" class="is2d">
+			<main
+				class="page-small challenge-page challenge-theirs box box-pad"
+			>
+				<div class="box__top"><h1>Anonymous</h1></div>
+				<div class="details">
+					<div class="variant" data-icon="">
+						<div>
+							<span title="Nopeat pelit: 8-25 minuuttia"
+								>Nopea</span
+							><br /><span class="clock">12+8</span>
+						</div>
+					</div>
+					<div class="mode">Satunnainen • Rento</div>
+				</div>
+				<form
+					method="get"
+					action="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+				>
+					<button
+						type="submit"
+						class="text button button-fat"
+						data-icon=""
+					>
+						Liity peliin
+					</button>
+				</form>
+			</main>
+		</div>
+		<a id="reconnecting" class="link text" data-icon=""
+			>Yhdistetään uudelleen</a
+		><svg width="0" height="0">
+			<mask id="mask">
+				<path
+					fill="#fff"
+					stroke="#fff"
+					stroke-linejoin="round"
+					d="M38.956.5c-3.53.418-6.452.902-9.286 2.984C5.534 1.786-.692 18.533.68 29.364 3.493 50.214 31.918 55.785 41.329 41.7c-7.444 7.696-19.276 8.752-28.323 3.084C3.959 39.116-.506 27.392 4.683 17.567 9.873 7.742 18.996 4.535 29.03 6.405c2.43-1.418 5.225-3.22 7.655-3.187l-1.694 4.86 12.752 21.37c-.439 5.654-5.459 6.112-5.459 6.112-.574-1.47-1.634-2.942-4.842-6.036-3.207-3.094-17.465-10.177-15.788-16.207-2.001 6.967 10.311 14.152 14.04 17.663 3.73 3.51 5.426 6.04 5.795 6.756 0 0 9.392-2.504 7.838-8.927L37.4 7.171z"
+				></path>
+			</mask>
+		</svg>
+		<script
+			defer="defer"
+			src="https://lichess1.org/assets/_umyOP6/javascripts/vendor/chessground.min.js"
+		></script>
+		<script nonce="Z2ERcKoaltbsTV0a7JrOVGTK">
+			lichess = {
+				load: new Promise((r) =>
+					document.addEventListener("DOMContentLoaded", r)
+				),
+				quantity: (o) => (1 == o ? "one" : "other"),
+				siteI18n: {
+					pause: "Pid\u00e4 tauko",
+					resume: "Jatka",
+					"nbFriendsOnline:one": "%s kaveri paikalla",
+					nbFriendsOnline: "%s kaveria paikalla",
+					justNow: "juuri \u00e4sken",
+					"inNbSeconds:one": "%s sekunnin kuluttua",
+					inNbSeconds: "%s sekunnin kuluttua",
+					"inNbMinutes:one": "%s minuutin kuluttua",
+					inNbMinutes: "%s minuutin kuluttua",
+					"inNbHours:one": "%s tunnin kuluttua",
+					inNbHours: "%s tunnin kuluttua",
+					"inNbDays:one": "%s p\u00e4iv\u00e4n kuluttua",
+					inNbDays: "%s p\u00e4iv\u00e4n kuluttua",
+					"inNbWeeks:one": "%s viikon kuluttua",
+					inNbWeeks: "%s viikon kuluttua",
+					"inNbMonths:one": "%s kuukauden kuluttua",
+					inNbMonths: "%s kuukauden kuluttua",
+					"inNbYears:one": "%s vuoden kuluttua",
+					inNbYears: "%s vuoden kuluttua",
+					rightNow: "juuri nyt",
+					"nbSecondsAgo:one": "%s sekunti sitten",
+					nbSecondsAgo: "%s sekuntia sitten",
+					"nbMinutesAgo:one": "%s minuutti sitten",
+					nbMinutesAgo: "%s minuuttia sitten",
+					"nbHoursAgo:one": "%s tunti sitten",
+					nbHoursAgo: "%s tuntia sitten",
+					"nbDaysAgo:one": "%s p\u00e4iv\u00e4 sitten",
+					nbDaysAgo: "%s p\u00e4iv\u00e4\u00e4 sitten",
+					"nbWeeksAgo:one": "%s viikko sitten",
+					nbWeeksAgo: "%s viikkoa sitten",
+					"nbMonthsAgo:one": "%s kuukausi sitten",
+					nbMonthsAgo: "%s kuukautta sitten",
+					"nbYearsAgo:one": "%s vuosi sitten",
+					nbYearsAgo: "%s vuotta sitten",
+				},
+			};
+		</script>
+		<script
+			defer="defer"
+			src="https://lichess1.org/assets/_umyOP6/compiled/lichess.min.js"
+		></script>
+		<script
+			defer="defer"
+			src="https://lichess1.org/assets/_umyOP6/compiled/challengePage.min.js"
+		></script>
+		<script nonce="Z2ERcKoaltbsTV0a7JrOVGTK">
+			lichess.load.then(() => {
+				challengePageStart({
+					socketUrl: "/challenge/9pL2LPy8/socket/v6",
+					xhrUrl: "/challenge/9pL2LPy8",
+					owner: false,
+					data: {
+						challenge: {
+							id: "9pL2LPy8",
+							url: "https://lichess.org/9pL2LPy8",
+							status: "created",
+							challenger: null,
+							destUser: null,
+							variant: {
+								key: "standard",
+								name: "Standard",
+								short: "Std",
+							},
+							rated: false,
+							speed: "rapid",
+							timeControl: {
+								type: "clock",
+								limit: 720,
+								increment: 8,
+								show: "12+8",
+							},
+							color: "random",
+							finalColor: "white",
+							perf: { icon: "\ue017", name: "Nopea" },
+							direction: "in",
+						},
+						socketVersion: 1,
+					},
+				});
+			});
+		</script>
+	</body>
+</html>
