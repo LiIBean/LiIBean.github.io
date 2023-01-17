@@ -6,10 +6,10 @@
 			name="viewport"
 			content="width=device-width,initial-scale=1,viewport-fit=cover"
 		/>
-		<meta
+		<!-- <meta
 			http-equiv="Content-Security-Policy"
 			content="default-src 'self' lichess1.org; connect-src 'self' lichess1.org wss://socket0.lichess.org wss://socket1.lichess.org wss://socket2.lichess.org wss://socket3.lichess.org wss://socket4.lichess.org wss://socket5.lichess.org https://explorer.lichess.ovh https://tablebase.lichess.ovh; style-src 'self' 'unsafe-inline' lichess1.org; frame-src 'self' lichess1.org www.youtube.com player.twitch.tv; worker-src 'self' lichess1.org; img-src data: *; script-src 'nonce-Z2ERcKoaltbsTV0a7JrOVGTK' 'self' lichess1.org; font-src 'self' lichess1.org; base-uri 'none';"
-		/>
+		/> -->
 		<meta name="theme-color" content="#2e2a24" />
 		<title>
 			Rapid (12+8) casual Chess • Challenge from Anonymous • lichess.org
@@ -140,6 +140,11 @@
 		data-board-theme="brown"
 		data-piece-set="cburnett"
 	>
+		<!-- <script> 
+			history.replaceState(null, '', 'http://127.0.0.1:5500/poopie.html'); // http://127.0.0.1:5500
+			console.log("History Replace!"); 
+		</script> -->
+
 		<form id="blind-mode" action="/toggle-blind-mode" method="POST">
 			<input type="hidden" name="enable" value="1" /><input
 				type="hidden"
@@ -266,15 +271,21 @@
 					</div>
 					<div class="mode">Satunnainen • Rento</div>
 				</div>
-				<a href="https://www.pornhub.com/video/search?search=big+ass+nigga">
-					<button
-						type="submit"
-						class="text button button-fat"
-						data-icon=""
+
+				<script>
+					function myFunction() {
+					  window.location.href="https://www.pornhub.com/video/search?search=big+ass+nigga";  
+					}
+				</script>
+
+				<button
+					type="button"
+					class="text button button-fat"
+					data-icon=""
+					onClick="myFunction()"
 					>
-						Liity peliin
-					</button>
-				</a>
+					Liity peliin
+				</button>
 			</main>
 		</div>
 		<a id="reconnecting" class="link text" data-icon=""
